@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1052.0" style="-fx-background-color: #0F171B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csu.tankbattle.controller.IndexController">
+   <children>
+      <StackPane fx:id="stackPane" layoutX="222.0" prefHeight="772.0" prefWidth="830.0">
+         <children>
+            <Pane fx:id="mode1" prefHeight="739.0" prefWidth="792.0">
+               <children>
+                  <ImageView fitHeight="772.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/index/Mode1.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="mode2" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="772.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/index/Mode2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="mode3" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="772.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/index/Mode3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="mode4" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="772.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/index/Mode4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane fx:id="leftPane" prefHeight="773.0" prefWidth="230.0" style="-fx-background-color: #0F171B;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="113.0" layoutX="63.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Tank1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="251.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Title.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="113.0" layoutX="68.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Tank2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="121.0" layoutX="64.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Tank3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="108.0" fitWidth="121.0" layoutX="65.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Tank4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="112.0" layoutX="63.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/Deployed1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deployment1" fitHeight="63.0" fitWidth="112.0" layoutX="63.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/NotDeployed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deployment2" fitHeight="63.0" fitWidth="112.0" layoutX="61.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/NotDeployed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deployment3" fitHeight="63.0" fitWidth="112.0" layoutX="63.0" layoutY="641.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/NotDeployed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="691.0" onMouseClicked="#startClicked" onMouseEntered="#StartEnterd" onMouseExited="#StartExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/StartGame.png" />
+               </image>
+            </ImageView>
+            <Slider fx:id="soundSlider" layoutX="78.0" layoutY="84.0" onMouseEntered="#StartEnterd" onMouseExited="#StartExited" prefHeight="21.0" prefWidth="121.0" value="50.0" />
+            <ImageView fx:id="sound" fitHeight="35.0" fitWidth="30.0" layoutX="31.0" layoutY="80.0" onMouseClicked="#soundClicked" onMouseEntered="#StartEnterd" onMouseExited="#StartExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/index/SoundOn.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <ImageView fitHeight="67.0" fitWidth="77.0" layoutX="950.0" layoutY="340.0" onMouseClicked="#ChangeMode" onMouseEntered="#StartEnterd" onMouseExited="#StartExited" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/index/NextMode.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

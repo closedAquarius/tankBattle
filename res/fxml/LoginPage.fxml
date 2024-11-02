@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csu.tankbattle.controller.LoginController">
+   <children>
+      <ImageView fitHeight="571.0" fitWidth="766.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home/LoginPageBackgroundImage.png" />
+         </image></ImageView>
+      <TextField fx:id="textUsername" layoutX="156.0" layoutY="320.0" prefHeight="40.0" prefWidth="282.0" promptText="请输入您的账号" style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-font-family: Microsoft YaHei; -fx-prompt-text-fill: #7F7F7F;" />
+      <PasswordField fx:id="textPassword" layoutX="156.0" layoutY="383.0" prefHeight="40.0" prefWidth="282.0" promptText="请输入您的密码" style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-font-family: Microsoft YaHei; -fx-prompt-text-fill: #7F7F7F;" />
+      <ImageView fx:id="btLogin" fitHeight="46.0" fitWidth="132.0" layoutX="149.0" layoutY="442.0" onMouseClicked="#loginClicked" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home/LoginButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btRegister" fitHeight="46.0" fitWidth="132.0" layoutX="306.0" layoutY="444.0" onMouseClicked="#registerClicked" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home/RegisterButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

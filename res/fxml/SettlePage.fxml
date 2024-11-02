@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csu.tankbattle.controller.OverController">
+   <children>
+      <ImageView fx:id="backGround" fitHeight="579.0" fitWidth="684.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/over/backG.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="100.0" fitWidth="271.0" layoutX="202.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/over/gameOver.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="301.0" layoutX="56.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/over/score.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="145.0" fitWidth="291.0" layoutX="46.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/over/thisRecord.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="374.0" layoutY="202.0" prefHeight="124.0" prefWidth="254.0" text="0" textFill="#fffefe">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="record" layoutX="363.0" layoutY="330.0" prefHeight="113.0" prefWidth="254.0" text="无" textFill="#fffbfb">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="result" layoutX="163.0" layoutY="111.0" prefHeight="80.0" prefWidth="350.0" textFill="#ee0909">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="269.0" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#backTo" prefHeight="60.0" prefWidth="134.0" text="返回">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
